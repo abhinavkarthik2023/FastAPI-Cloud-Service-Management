@@ -1,4 +1,5 @@
 # Cloud-Service-Access-Management-System
+
 This project is a FastAPI-based cloud subscription service, integrating SQLAlchemy for database management. It allows for the creation, modification, and deletion of subscription plans, permissions, and user subscriptions. It also includes API usage tracking and access control based on user subscriptions.
 
 # Project Team Members - Group Project 16
@@ -70,15 +71,15 @@ Configure the DATABASE_URL in the code to point to your MySQL instance.
 
 ## Database Models
 
-● Plan: Represents subscription plans.
+ Plan: Represents subscription plans.
 
-● Permission: Represents permissions.
+ Permission: Represents permissions.
 
-● Subscription: Links users to their subscription plans.
+ Subscription: Links users to their subscription plans.
 
-● User: User data.
+ User: User data.
 
-● Usage: Tracks API usage by users.
+ Usage: Tracks API usage by users.
 
 
 ## Pydantic Models
@@ -87,15 +88,15 @@ PlanCreate, PermissionCreate, SubscriptionCreate, etc., are Pydantic models for 
 
 # Endpoints
 
-● Subscription Plans : POST /plans/{token}, GET /plans/{plan_id}, PUT /plans/{plan_id}/{token}, DELETE /plans/{plan_id}/{token}
+ Subscription Plans : POST /plans/{token}, GET /plans/{plan_id}, PUT /plans/{plan_id}/{token}, DELETE /plans/{plan_id}/{token}
 
-● Permissions : PUT /permissions/{permission_id}/{user_id}, DELETE /permissions/{permission_id}/{user_id}
+ Permissions : PUT /permissions/{permission_id}/{user_id}, DELETE /permissions/{permission_id}/{user_id}
 
-● User Subscriptions : POST /subscriptions/{user_id}, GET /subscriptions/{user_id}
+ User Subscriptions : POST /subscriptions/{user_id}, GET /subscriptions/{user_id}
 
-● Access Control : GET /access/{user_id}/{api_request}
+ Access Control : GET /access/{user_id}/{api_request}
 
-● Usage Tracking : GET /usage/{type}/{user_id} where {type} can be a, b, or c for different API endpoint types.
+ Usage Tracking : GET /usage/{type}/{user_id} where {type} can be a, b, or c for different API endpoint types.
 
 
 # Running the Application
@@ -104,7 +105,7 @@ To run the server, execute:
 
 ## uvicorn main:app --reload
 
-Replace main with the name of your Python file.
+● Replace main with the name of your Python file.
 
 Notes
 
