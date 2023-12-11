@@ -1,5 +1,5 @@
 
-Database Schema for FastAPI Cloud Subscription Service
+Database Schema for FastAPI Cloud Service Management 
 ======================================================
 
 The database for the FastAPI Cloud Subscription Service consists of several tables designed to manage subscription plans, user subscriptions, permissions, and API usage. Below are the details of each table along with their structures and relationships.
