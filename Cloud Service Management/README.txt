@@ -6,6 +6,20 @@ Overview
 --------
 This FastAPI Cloud Subscription Service is a robust backend system designed to manage cloud-based subscription plans, user subscriptions, permissions, and API access control. It utilizes FastAPI for efficient API development and SQLAlchemy for seamless database interactions, catering to high-performance cloud services environments.
 
+Contributing
+------------
+Project Team Members - Group Project 16
+
+Venkata Abhinav Karthik Pulikonda (Cwid -885210294)
+Sai Satya Jagannadh Doddipatla (Cwid - 885177436)
+Rakesh Puppala (Cwid - )
+Piyush Jagtap (Cwid - )
+
+Link to the Demonstration of the Project
+----------------------------------------
+
+
+
 Prerequisites
 -------------
 - Python 3.6 or higher
@@ -44,25 +58,9 @@ Features
 - **Access Control**: Control user access to various API endpoints based on subscription.
 - **API Usage Tracking**: Monitor and limit user API usage.
 
-Documentation
--------------
-API documentation is automatically generated and can be accessed at `/docs` or `/redoc` endpoints.
-
-Contributing
-------------
-Project Team Members - Group Project 16
-Venkata Abhinav Karthik Pulikonda (Cwid -885210294)
-Sai Satya Jagannadh Doddipatla (Cwid - 885177436)
-Rakesh Puppala (Cwid - )
-Piyush Jagtap (Cwid - )
-
-
 
 Database Schema
 ----------------
-
-Database Schema for FastAPI Cloud Service Management 
-======================================================
 
 The database for the FastAPI Cloud Subscription Service consists of several tables designed to manage subscription plans, user subscriptions, permissions, and API usage. Below are the details of each table along with their structures and relationships.
 
@@ -115,10 +113,8 @@ Relationships
 - The 'subscriptions' table links users to their subscription plans with foreign keys to the 'users' and 'plans' tables.
 - The 'usage' table tracks API usage per user, linked to the 'users' table.
 
-
-
 ---
-End of Database Schema Document
+End of Database Schema 
 
 
 Acknowledgements
