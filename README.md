@@ -57,7 +57,7 @@ This project involves developing a backend system for managing access to cloud s
 
 Install the required packages using pip:
 
-##● pip install fastapi sqlalchemy mysql-connector-python
+## pip install fastapi sqlalchemy mysql-connector-python
 
 
 # Database Configuration
@@ -92,7 +92,7 @@ PlanCreate, PermissionCreate, SubscriptionCreate, etc., are Pydantic models for 
 
 To run the server, execute:
 
-##● uvicorn main:app --reload
+## uvicorn main:app --reload
 
 Replace main with the name of your Python file.
 
