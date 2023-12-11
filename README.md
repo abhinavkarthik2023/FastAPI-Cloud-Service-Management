@@ -60,6 +60,10 @@ Install the required packages using pip:
 
 ## pip install fastapi sqlalchemy mysql-connector-python
 
+AND
+
+## pip install -r requirements.txt
+
 
 # Database Configuration
 
