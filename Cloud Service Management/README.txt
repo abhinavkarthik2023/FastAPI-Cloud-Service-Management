@@ -1,4 +1,3 @@
-README.txt
 FastAPI Cloud Subscription Service
 ===================================
 
