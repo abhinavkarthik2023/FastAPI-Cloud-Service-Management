@@ -19,10 +19,12 @@ https://drive.google.com/drive/folders/1glbYEe3w4sCLLGcXtVHQt_KbYG5L9AXw?usp=sha
 
 
    Prerequisites
+-------------------------------
 - Python 3.6 or higher
 - MySQL Server
 
    Installation
+-------------------------------
 1. Clone the repository:
    git clone [https://github.com/abhinavkarthik2023/FastAPI-Cloud-Service-Management/tree/main]
 
@@ -35,16 +37,19 @@ https://drive.google.com/drive/folders/1glbYEe3w4sCLLGcXtVHQt_KbYG5L9AXw?usp=sha
 4. Ensure MySQL Server is installed and running.
 
    Configuration
+-------------------------------
 1. Update the `DATABASE_URL` in the source code to reflect your MySQL database credentials and server details.
 2. Initialize the database by running the provided initialization scripts, if any.
 
    Usage
+-------------------------------
 1. Start the FastAPI server:
    uvicorn main:app --reload
 
 2. Access the API endpoints through the provided URL (typically `http://127.0.0.1:8000`).
 
    Features
+-------------------------------
 -  Subscription Plan Management**: Create, read, update, and delete subscription plans.
 -  Permission Management**: Modify and delete permissions.
 -  User Subscription Handling**: Manage user subscriptions to different plans.
@@ -53,7 +58,7 @@ https://drive.google.com/drive/folders/1glbYEe3w4sCLLGcXtVHQt_KbYG5L9AXw?usp=sha
 
 
    Database Schema
-
+-------------------------------
 The database for the # FastAPI Cloud Subscription Service consists of several tables designed to manage subscription plans, user subscriptions, permissions, and API usage. Below are the details of each table along with their structures and relationships.
 
 1. Plan Table
