@@ -20,17 +20,14 @@ Installation
 git clone [repository-url]
 
 
-
 2. Navigate to the project directory:
 
 cd [project-directory]
 
 
-
 3. Install required Python packages:
 
 pip install -r requirements.txt
-
 
 
 4. Ensure MySQL Server is installed and running.
@@ -49,7 +46,6 @@ Usage
 1. Start the FastAPI server:
 
 uvicorn main:app --reload
-
 
 
 2. Access the API endpoints through the provided URL (typically `http://127.0.0.1:8000`).
@@ -84,11 +80,13 @@ Rakesh Puppala (Cwid - )
 Piyush Jagtap (Cwid - )
 
 
-
 Acknowledgements
 ----------------
 This project was developed as part of the California State University Fullerton's [CPSC 449/Web-Backend Engineering]. 
 Special thanks to Professor Harsh Bodgal and the contributors.
+
+
+
 
 ---
 End of README.txt
