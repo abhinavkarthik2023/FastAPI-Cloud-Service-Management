@@ -14,7 +14,7 @@ Prerequisites
 Installation
 ------------
 1. Clone the repository:
-   git clone [repository-url]
+   git clone [https://github.com/abhinavkarthik2023/FastAPI-Cloud-Service-Management/tree/main]
 
 2. Navigate to the project directory:
    cd [project-directory]
