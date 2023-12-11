@@ -1,0 +1,59 @@
+
+Database Schema for FastAPI Cloud Subscription Service
+======================================================
+
+The database for the FastAPI Cloud Subscription Service consists of several tables designed to manage subscription plans, user subscriptions, permissions, and API usage. Below are the details of each table along with their structures and relationships.
+
+1. Plan Table
+-------------
+- Table Name: plans
+- Columns:
+  - id: Integer, Primary Key
+  - name: String(255), Indexed
+  - description: String(20)
+  - permissions: String(20) (Comma-separated list of permissions)
+  - usage_limit: Integer
+
+2. Permission Table
+-------------------
+- Table Name: permissions
+- Columns:
+  - id: Integer, Primary Key
+  - name: String(1), Indexed
+  - description: String(20)
+
+3. Subscription Table
+---------------------
+- Table Name: subscriptions
+- Columns:
+  - id: Integer, Primary Key
+  - user_id: Integer, ForeignKey to 'users.id'
+  - plan_id: Integer, ForeignKey to 'plans.id'
+
+4. User Table
+-------------
+- Table Name: users
+- Columns:
+  - id: Integer, Primary Key
+  - username: String(20), Indexed
+  - status: String(20)
+  - (Other user attributes can be added here)
+
+5. Usage Table
+--------------
+- Table Name: usage
+- Columns:
+  - id: Integer, Primary Key
+  - user_id: Integer, ForeignKey to 'users.id'
+  - api_endpoint: Integer
+  - timestamp: Integer
+
+Relationships
+-------------
+- The 'subscriptions' table links users to their subscription plans with foreign keys to the 'users' and 'plans' tables.
+- The 'usage' table tracks API usage per user, linked to the 'users' table.
+
+
+
+---
+End of Database Schema Document
