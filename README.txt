@@ -1,29 +1,28 @@
+   FastAPI Cloud Subscription Service
+=========================================
+   Overview
 
-# FastAPI Cloud Subscription Service
-===================================
-
-## Overview
 This # FastAPI Cloud Subscription Service is a robust backend system designed to manage cloud-based subscription plans, user subscriptions, permissions, and API access control. It utilizes FastAPI for efficient API development and SQLAlchemy for seamless database interactions, catering to high-performance cloud services environments.
 
-## Contributing
-
-## Project Team Members - Group Project 16
+   Contributing
+----------------------------------------
+Project Team Members - Group Project 16
 
 Venkata Abhinav Karthik Pulikonda (Cwid -885210294)
 Sai Satya Jagannadh Doddipatla (Cwid - 885177436)
 Rakesh Puppala (Cwid - )
 Piyush Jagtap (Cwid - )
 
-## Link to the Demonstration of the Project
-----------------------------------------
+   Link to the Demonstration of the Project
+------------------------------------------------
 https://drive.google.com/drive/folders/1glbYEe3w4sCLLGcXtVHQt_KbYG5L9AXw?usp=sharing
 
 
-## Prerequisites
+   Prerequisites
 - Python 3.6 or higher
 - MySQL Server
 
-## Installation
+   Installation
 1. Clone the repository:
    git clone [https://github.com/abhinavkarthik2023/FastAPI-Cloud-Service-Management/tree/main]
 
@@ -35,25 +34,25 @@ https://drive.google.com/drive/folders/1glbYEe3w4sCLLGcXtVHQt_KbYG5L9AXw?usp=sha
 
 4. Ensure MySQL Server is installed and running.
 
-## Configuration
+   Configuration
 1. Update the `DATABASE_URL` in the source code to reflect your MySQL database credentials and server details.
 2. Initialize the database by running the provided initialization scripts, if any.
 
-## Usage
+   Usage
 1. Start the FastAPI server:
    uvicorn main:app --reload
 
 2. Access the API endpoints through the provided URL (typically `http://127.0.0.1:8000`).
 
-## Features
-- ** Subscription Plan Management**: Create, read, update, and delete subscription plans.
-- ** Permission Management**: Modify and delete permissions.
-- ** User Subscription Handling**: Manage user subscriptions to different plans.
-- ** Access Control**: Control user access to various API endpoints based on subscription.
-- ** API Usage Tracking**: Monitor and limit user API usage.
+   Features
+-  Subscription Plan Management**: Create, read, update, and delete subscription plans.
+-  Permission Management**: Modify and delete permissions.
+-  User Subscription Handling**: Manage user subscriptions to different plans.
+-  Access Control**: Control user access to various API endpoints based on subscription.
+-  API Usage Tracking**: Monitor and limit user API usage.
 
 
-# Database Schema
+   Database Schema
 
 The database for the # FastAPI Cloud Subscription Service consists of several tables designed to manage subscription plans, user subscriptions, permissions, and API usage. Below are the details of each table along with their structures and relationships.
 
@@ -101,16 +100,16 @@ The database for the # FastAPI Cloud Subscription Service consists of several ta
   - api_endpoint: Integer
   - timestamp: Integer
 
-## Relationships
--------------
+   Relationships
+--------------------
 - The 'subscriptions' table links users to their subscription plans with foreign keys to the 'users' and 'plans' tables.
 - The 'usage' table tracks API usage per user, linked to the 'users' table.
 
 ---
-End of Database Schema 
 
 
-# Acknowledgements
+   Acknowledgements
+---------------------
 This project was developed as part of the California State University Fullerton's [CPSC 449/Web-Backend Engineering]. 
 Special thanks to Professor Harsh Bodgal and the contributors.
 
