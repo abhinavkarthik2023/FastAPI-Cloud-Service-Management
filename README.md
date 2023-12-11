@@ -45,9 +45,13 @@ This project involves developing a backend system for managing access to cloud s
 # Requirements
 
 ● FastAPI
+
 ● SQLAlchemy
+
 ● MySQL Connector
+
 ● Python 3.6+
+
 
 # Installation
 
