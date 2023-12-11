@@ -105,13 +105,13 @@ To run the server, execute:
 
 ## uvicorn main:app --reload
 
-● Replace main with the name of your Python file.
+* Replace main with the name of your Python file.
 
 Notes
 
-● Ensure your MySQL service is running and accessible.
+* Ensure your MySQL service is running and accessible.
 
-● The application is designed for learning and development purposes and may require modifications for production use.
+* The application is designed for learning and development purposes and may require modifications for production use.
 
 
   
