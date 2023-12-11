@@ -1,21 +1,21 @@
 
-FastAPI Cloud Subscription Service
+# FastAPI Cloud Subscription Service
 ===================================
 
-Overview
+## Overview
 --------
 This FastAPI Cloud Subscription Service is a robust backend system designed to manage cloud-based subscription plans, user subscriptions, permissions, and API access control. It utilizes FastAPI for efficient API development and SQLAlchemy for seamless database interactions, catering to high-performance cloud services environments.
 
-Contributing
+## Contributing
 ------------
-Project Team Members - Group Project 16
+## Project Team Members - Group Project 16
 
 Venkata Abhinav Karthik Pulikonda (Cwid -885210294)
 Sai Satya Jagannadh Doddipatla (Cwid - 885177436)
 Rakesh Puppala (Cwid - )
 Piyush Jagtap (Cwid - )
 
-Link to the Demonstration of the Project
+## Link to the Demonstration of the Project
 ----------------------------------------
 
 
@@ -50,16 +50,16 @@ Usage
 
 2. Access the API endpoints through the provided URL (typically `http://127.0.0.1:8000`).
 
-Features
+## Features
 --------
-- **Subscription Plan Management**: Create, read, update, and delete subscription plans.
-- **Permission Management**: Modify and delete permissions.
-- **User Subscription Handling**: Manage user subscriptions to different plans.
-- **Access Control**: Control user access to various API endpoints based on subscription.
-- **API Usage Tracking**: Monitor and limit user API usage.
+- ** Subscription Plan Management**: Create, read, update, and delete subscription plans.
+- ** Permission Management**: Modify and delete permissions.
+- ** User Subscription Handling**: Manage user subscriptions to different plans.
+- ** Access Control**: Control user access to various API endpoints based on subscription.
+- ** API Usage Tracking**: Monitor and limit user API usage.
 
 
-Database Schema
+# Database Schema
 ----------------
 
 The database for the FastAPI Cloud Subscription Service consists of several tables designed to manage subscription plans, user subscriptions, permissions, and API usage. Below are the details of each table along with their structures and relationships.
@@ -108,7 +108,7 @@ The database for the FastAPI Cloud Subscription Service consists of several tabl
   - api_endpoint: Integer
   - timestamp: Integer
 
-Relationships
+## Relationships
 -------------
 - The 'subscriptions' table links users to their subscription plans with foreign keys to the 'users' and 'plans' tables.
 - The 'usage' table tracks API usage per user, linked to the 'users' table.
@@ -117,7 +117,7 @@ Relationships
 End of Database Schema 
 
 
-Acknowledgements
+# Acknowledgements
 ----------------
 This project was developed as part of the California State University Fullerton's [CPSC 449/Web-Backend Engineering]. 
 Special thanks to Professor Harsh Bodgal and the contributors.
