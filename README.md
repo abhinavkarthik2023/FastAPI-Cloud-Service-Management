@@ -1,6 +1,5 @@
 # Cloud-Service-Access-Management-System
-This project involves developing a backend system for managing access to cloud services based on user subscriptions. The primary users of the system are Customers who access cloud services and Admins who manage subscription plans and permission
-
+This project is a FastAPI-based cloud subscription service, integrating SQLAlchemy for database management. It allows for the creation, modification, and deletion of subscription plans, permissions, and user subscriptions. It also includes API usage tracking and access control based on user subscriptions.
 
 # Project Team Members - Group Project 16
 
