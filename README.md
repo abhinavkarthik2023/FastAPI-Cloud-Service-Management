@@ -71,10 +71,15 @@ Configure the DATABASE_URL in the code to point to your MySQL instance.
 ## Database Models
 
 ● Plan: Represents subscription plans.
+
 ● Permission: Represents permissions.
+
 ● Subscription: Links users to their subscription plans.
+
 ● User: User data.
+
 ● Usage: Tracks API usage by users.
+
 
 ## Pydantic Models
 
@@ -83,10 +88,15 @@ PlanCreate, PermissionCreate, SubscriptionCreate, etc., are Pydantic models for 
 # Endpoints
 
 ● Subscription Plans : POST /plans/{token}, GET /plans/{plan_id}, PUT /plans/{plan_id}/{token}, DELETE /plans/{plan_id}/{token}
+
 ● Permissions : PUT /permissions/{permission_id}/{user_id}, DELETE /permissions/{permission_id}/{user_id}
+
 ● User Subscriptions : POST /subscriptions/{user_id}, GET /subscriptions/{user_id}
+
 ● Access Control : GET /access/{user_id}/{api_request}
+
 ● Usage Tracking : GET /usage/{type}/{user_id} where {type} can be a, b, or c for different API endpoint types.
+
 
 # Running the Application
 
@@ -99,6 +109,7 @@ Replace main with the name of your Python file.
 Notes
 
 ● Ensure your MySQL service is running and accessible.
+
 ● The application is designed for learning and development purposes and may require modifications for production use.
 
 
