@@ -33,61 +33,67 @@ This project involves developing a backend system for managing access to cloud s
 
 
 
-# Getting Started
+# Features
 
-This Django application is designed to accomplish cloud service management for admin and users.
+## Subscription Plan Management: Create, view, modify, or delete subscription plans.
+## Permission Management: Modify or delete permissions.
+## User Subscription Handling: Subscribe users to plans and view their subscriptions.
+## Access Control: Check users' access permissions to different API endpoints.
+## Usage Tracking: Track and manage users' API usage.
 
-## Prerequisites
 
-- Python version 3.10 or higher
-- Virtual environment (optional but recommended)
+# Requirements
 
-## Installation
+FastAPI
+SQLAlchemy
+MySQL Connector
+Python 3.6+
+Installation
 
-1. **Unzip the Project:**
+Install the required packages using pip:
 
-   Unzip the downloaded project to your desired location.
+## pip install fastapi sqlalchemy mysql-connector-python
 
-2. **Navigate to the Project Directory:**
 
-   ```bash
-   cd <Project directory>
-   ```
+# Database Configuration
 
-3. **Create a Virtual Environment (Optional but Recommended):**
+MySQL database is required.
+Configure the DATABASE_URL in the code to point to your MySQL instance.
 
-   ```bash
-   python -m venv venv
-   ```
+# Models
 
-4. **Activate the Virtual Environment:**
+## Database Models
 
-   - For Unix/Linux:
+Plan: Represents subscription plans.
+Permission: Represents permissions.
+Subscription: Links users to their subscription plans.
+User: User data.
+Usage: Tracks API usage by users.
 
-     ```bash
-     source venv/bin/activate
-     ```
+## Pydantic Models
 
-   - For Windows:
+PlanCreate, PermissionCreate, SubscriptionCreate, etc., are Pydantic models for request validation.
 
-     ```bash
-     .\venv\Scripts\activate
-     ```
+# Endpoints
 
-5. **Install Dependencies:**
+Subscription Plans: POST /plans/{token}, GET /plans/{plan_id}, PUT /plans/{plan_id}/{token}, DELETE /plans/{plan_id}/{token}
+Permissions: PUT /permissions/{permission_id}/{user_id}, DELETE /permissions/{permission_id}/{user_id}
+User Subscriptions: POST /subscriptions/{user_id}, GET /subscriptions/{user_id}
+Access Control: GET /access/{user_id}/{api_request}
+Usage Tracking: GET /usage/{type}/{user_id} where {type} can be a, b, or c for different API endpoint types.
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+# Running the Application
 
-6. **Apply Database Migrations:**
+To run the server, execute:
 
-   ```bash
-   python manage.py migrate
-   ```
+## uvicorn main:app --reload
 
-7. **Run the Development Server:**
+Replace main with the name of your Python file.
 
-   ```bash
-   python manage.py runserver
-   ```
+Notes
+
+Ensure your MySQL service is running and accessible.
+The application is designed for learning and development purposes and may require modifications for production use.
+
+
+  
