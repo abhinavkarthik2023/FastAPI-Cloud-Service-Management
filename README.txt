@@ -17,7 +17,6 @@ Piyush Jagtap (Cwid - )
 ------------------------------------------------
 https://drive.google.com/drive/folders/1glbYEe3w4sCLLGcXtVHQt_KbYG5L9AXw?usp=sharing
 
-
    Prerequisites
 -------------------------------
 - Python 3.6 or higher
